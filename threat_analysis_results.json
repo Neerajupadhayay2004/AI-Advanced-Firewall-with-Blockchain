@@ -1,0 +1,310 @@
+{
+  "analysis_id": "474132bdf08e",
+  "timestamp": "2025-08-22T10:24:01.136548",
+  "processing_time": 1.043633222579956,
+  "model_results": {
+    "deep_neural_network": {
+      "model_name": "deep_neural_network",
+      "model_type": "DNN",
+      "prediction": {
+        "threat_probability": 0.16866914743774455,
+        "threat_class": "benign",
+        "confidence": 0.36865047981834725,
+        "layer_activations": [
+          0.030450532304392652,
+          0.7858958161542476,
+          0.5225449455688043,
+          0.1785862320467495,
+          0.11881076135654656
+        ]
+      },
+      "confidence": 0.36865047981834725,
+      "processing_time": 0.056221600214373765,
+      "model_accuracy": 0.96,
+      "feature_importance": {
+        "network_packet_size_mean": 0.4137178428450706,
+        "network_packet_size_std": 0.10233252047322071,
+        "network_packet_size_max": 0.8008654774402051,
+        "network_packet_size_min": 0.3624603069285498,
+        "network_unique_ports": 0.41379939201010807,
+        "network_protocol_diversity": 0.5370354469438653,
+        "payload_avg_entropy": 0.4583783470253191,
+        "payload_max_entropy": 0.6202734478632789,
+        "payload_suspicious_strings": 0.33778851225506756,
+        "payload_compression_ratio": 0.5033017994609743,
+        "behavioral_avg_interval": 0.20633250080114346,
+        "behavioral_interval_variance": 0.30015559370221484,
+        "behavioral_burst_detection": 0.5611123303231418,
+        "behavioral_regularity_score": 0.7643972825155358
+      }
+    },
+    "ensemble_classifier": {
+      "model_name": "ensemble_classifier",
+      "model_type": "Ensemble",
+      "prediction": {
+        "prediction": "benign",
+        "confidence": 1.0,
+        "individual_votes": {
+          "random_forest": "benign",
+          "gradient_boosting": "benign",
+          "svm": "benign"
+        },
+        "vote_distribution": {
+          "benign": 3
+        }
+      },
+      "confidence": 1.0,
+      "processing_time": 0.27548527650247046,
+      "model_accuracy": 0.94,
+      "feature_importance": {
+        "network_packet_size_mean": 0.18921949687260567,
+        "network_packet_size_std": 0.5123520575042377,
+        "network_packet_size_max": 0.8990294026027973,
+        "network_packet_size_min": 0.7951547992577299,
+        "network_unique_ports": 0.14584956538616245,
+        "network_protocol_diversity": 0.7753422889982577,
+        "payload_avg_entropy": 0.48838016363201087,
+        "payload_max_entropy": 0.7017643733228176,
+        "payload_suspicious_strings": 0.8227513466959668,
+        "payload_compression_ratio": 0.9415099866815029,
+        "behavioral_avg_interval": 0.1583782059897441,
+        "behavioral_interval_variance": 0.2990822693834323,
+        "behavioral_burst_detection": 0.29893952805443436,
+        "behavioral_regularity_score": 0.6459810629839585
+      }
+    },
+    "lstm_behavioral": {
+      "model_name": "lstm_behavioral",
+      "model_type": "LSTM",
+      "prediction": {
+        "sequence_anomaly_score": 0.3178291846290056,
+        "behavioral_classification": "normal",
+        "confidence": 0.8834168532440437,
+        "attention_weights": [
+          0.1597519212667251,
+          0.43646852182262486,
+          0.7576953436697399,
+          0.4616227753526697,
+          0.9188674510554372,
+          0.24368973381075,
+          0.21674495858556497,
+          0.04430110747873761,
+          0.6964092739641103,
+          0.09597923207075454
+        ]
+      },
+      "confidence": 0.8834168532440437,
+      "processing_time": 0.2622634389207723,
+      "model_accuracy": 0.92,
+      "feature_importance": {
+        "network_packet_size_mean": 0.5185066892177601,
+        "network_packet_size_std": 0.3344943882907459,
+        "network_packet_size_max": 0.8220730350218118,
+        "network_packet_size_min": 0.411170408025161,
+        "network_unique_ports": 0.13044130531491335,
+        "network_protocol_diversity": 0.672741741666377,
+        "payload_avg_entropy": 0.6145307943329618,
+        "payload_max_entropy": 0.4241705505967593,
+        "payload_suspicious_strings": 0.38655064155379953,
+        "payload_compression_ratio": 0.8984081572214171,
+        "behavioral_avg_interval": 0.48862688052355874,
+        "behavioral_interval_variance": 0.6573500062994386,
+        "behavioral_burst_detection": 0.15569091000004423,
+        "behavioral_regularity_score": 0.6619073794888759
+      }
+    },
+    "transformer_nlp": {
+      "model_name": "transformer_nlp",
+      "model_type": "Transformer",
+      "prediction": {
+        "semantic_threat_score": 0.3513546348912019,
+        "language_classification": "benign",
+        "confidence": 0.932022831713633,
+        "attention_patterns": {
+          "token_0": 0.084580630373982,
+          "token_1": 0.014522433427406334,
+          "token_2": 0.4888933526756687,
+          "token_3": 0.3420998324204305,
+          "token_4": 0.07328028962837396,
+          "token_5": 0.6958614821156599,
+          "token_6": 0.7906017843469428,
+          "token_7": 0.9117520797686224,
+          "token_8": 0.06431412832568328,
+          "token_9": 0.6971734328539603,
+          "token_10": 0.2744796670953582,
+          "token_11": 0.6746142414151706,
+          "token_12": 0.28844356985161645,
+          "token_13": 0.18204949729550735,
+          "token_14": 0.3984597316279477,
+          "token_15": 0.9814733801622859,
+          "token_16": 0.7733319007360968,
+          "token_17": 0.18354621848188635,
+          "token_18": 0.9099151893248897,
+          "token_19": 0.5207336278159516
+        }
+      },
+      "confidence": 0.932022831713633,
+      "processing_time": 0.2610331959750647,
+      "model_accuracy": 0.98,
+      "feature_importance": {
+        "network_packet_size_mean": 0.5005433756642514,
+        "network_packet_size_std": 0.427133368275585,
+        "network_packet_size_max": 0.8009241709430196,
+        "network_packet_size_min": 0.4554423032974144,
+        "network_unique_ports": 0.8049129810852278,
+        "network_protocol_diversity": 0.8491103261304691,
+        "payload_avg_entropy": 0.3705604466299523,
+        "payload_max_entropy": 0.3906320370143554,
+        "payload_suspicious_strings": 0.30695020921274485,
+        "payload_compression_ratio": 0.375718077222339,
+        "behavioral_avg_interval": 0.5488859367234273,
+        "behavioral_interval_variance": 0.6337735314764721,
+        "behavioral_burst_detection": 0.8474772109860665,
+        "behavioral_regularity_score": 0.5950485289705163
+      }
+    },
+    "graph_neural_network": {
+      "model_name": "graph_neural_network",
+      "model_type": "GNN",
+      "prediction": {
+        "network_anomaly_score": 0.22185238208201763,
+        "graph_classification": "normal_topology",
+        "confidence": 0.919735561485453,
+        "node_embeddings": [
+          -0.7807771585632606,
+          0.5108174575005993,
+          -0.18079992819305057,
+          -0.12252917849521738,
+          0.5898758497047862,
+          -0.7020569872588092,
+          0.6247621818550186,
+          -0.7136568677069435,
+          0.9590910029469246,
+          -0.5048154069568516,
+          -0.964920694702949,
+          -0.9983930759213493,
+          0.8952962206361681,
+          -0.7605916430625326,
+          -0.31535615988912924,
+          0.42039934653440314,
+          0.4281937135527141,
+          0.7646821622735451,
+          0.7935874196396215,
+          -0.09731839993012525,
+          -0.36360180935536945,
+          0.6435141488757459,
+          0.2780639635496738,
+          -0.968528008231067,
+          -0.016928306214466726,
+          -0.7211781643277924,
+          0.504318029394176,
+          0.571114935966043,
+          -0.6378988298667685,
+          -0.4665075217697223,
+          0.8947462221828577,
+          0.1621464146058258,
+          0.7475064071960085,
+          -0.27229760334174813,
+          0.6975520626297955,
+          0.3597422772757448,
+          -0.32275460559977653,
+          0.8008538502861517,
+          0.4897956475219658,
+          0.273123506292241,
+          -0.73626225705995,
+          -0.5863859086122549,
+          0.036780862934657765,
+          -0.4572919800607975,
+          -0.19742809547333184,
+          0.4236099565247142,
+          -0.2911529510113764,
+          -0.49196840349602744,
+          -0.840051431933726,
+          -0.7760802109634859,
+          0.03691171423118611,
+          -0.6512527868315443,
+          -0.3179818101121572,
+          0.7280780953327808,
+          -0.03822251881537375,
+          0.5699759599099823,
+          -0.4531495222316022,
+          0.7782773128421758,
+          0.631180199920599,
+          0.4637512078610757,
+          0.8524217019508549,
+          0.5150669687030749,
+          0.30389393286203537,
+          -0.07134985477561084
+        ]
+      },
+      "confidence": 0.919735561485453,
+      "processing_time": 0.17922111625767045,
+      "model_accuracy": 0.89,
+      "feature_importance": {
+        "network_packet_size_mean": 0.7744544193971195,
+        "network_packet_size_std": 0.742093115785896,
+        "network_packet_size_max": 0.7953412638544706,
+        "network_packet_size_min": 0.4115123845733367,
+        "network_unique_ports": 0.8554732038701537,
+        "network_protocol_diversity": 0.5312375691746016,
+        "payload_avg_entropy": 0.25387012540637516,
+        "payload_max_entropy": 0.5493768860151852,
+        "payload_suspicious_strings": 0.314568817820313,
+        "payload_compression_ratio": 0.5886878743084694,
+        "behavioral_avg_interval": 0.7701238551033153,
+        "behavioral_interval_variance": 0.7917350939528004,
+        "behavioral_burst_detection": 0.1825703552725186,
+        "behavioral_regularity_score": 0.4530488169754282
+      }
+    }
+  },
+  "ensemble_prediction": {
+    "final_threat_score": 0.09999999999999999,
+    "classification": "benign",
+    "ensemble_confidence": 0.8207651452522953,
+    "model_agreement": 0.2,
+    "contributing_models": 5
+  },
+  "threat_intelligence": {
+    "threat_family": "unknown",
+    "attack_vector": "unknown",
+    "severity": "low",
+    "indicators": [
+      "Threat score: 0.10",
+      "Classification: benign",
+      "Model agreement: 0.20"
+    ],
+    "attribution": "localized_threat_actor",
+    "mitigation_strategies": [
+      "Enhanced monitoring",
+      "Traffic filtering",
+      "Signature-based detection",
+      "Behavioral analysis"
+    ]
+  },
+  "confidence_score": 0.8184637506207991,
+  "risk_score": 0.0065661211620183626,
+  "recommendations": [
+    "LOW: Continue normal operations",
+    "Maintain standard monitoring",
+    "Regular security assessments"
+  ],
+  "model_performance": {
+    "accuracy_history": [],
+    "precision_recall": {
+      "precision": 0.95,
+      "recall": 0.93,
+      "f1_score": 0.94
+    },
+    "false_positive_rate": 0.02,
+    "false_negative_rate": 0.07,
+    "processing_time": {
+      "mean": 0.15,
+      "std": 0.05
+    },
+    "model_drift_detection": {
+      "status": "stable",
+      "last_check": "2025-08-22T10:24:00.092642"
+    }
+  }
+}

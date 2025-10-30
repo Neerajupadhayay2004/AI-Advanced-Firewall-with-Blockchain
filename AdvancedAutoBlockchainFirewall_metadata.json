@@ -1,0 +1,1323 @@
+{
+	"compiler": {
+		"version": "0.8.30+commit.73712a01"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "admin",
+						"type": "address"
+					}
+				],
+				"name": "AdminAdded",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "admin",
+						"type": "address"
+					}
+				],
+				"name": "AdminRemoved",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "ip",
+						"type": "string"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "suspicionScore",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "timestamp",
+						"type": "uint256"
+					}
+				],
+				"name": "AutoBlocked",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "bool",
+						"name": "status",
+						"type": "bool"
+					}
+				],
+				"name": "AutoDetectionEnabled",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "ip",
+						"type": "string"
+					},
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "admin",
+						"type": "address"
+					}
+				],
+				"name": "IPBlacklisted",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "ip",
+						"type": "string"
+					},
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "admin",
+						"type": "address"
+					}
+				],
+				"name": "IPWhitelisted",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "sourceIP",
+						"type": "string"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "connectionCount",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "suspicionScore",
+						"type": "uint256"
+					}
+				],
+				"name": "PacketScanned",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "uint256",
+						"name": "ruleId",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					},
+					{
+						"indexed": false,
+						"internalType": "enum AdvancedAutoBlockchainFirewall.RuleAction",
+						"name": "action",
+						"type": "uint8"
+					}
+				],
+				"name": "RuleCreated",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "uint256",
+						"name": "ruleId",
+						"type": "uint256"
+					}
+				],
+				"name": "RuleDeleted",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "uint256",
+						"name": "ruleId",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "bool",
+						"name": "isActive",
+						"type": "bool"
+					}
+				],
+				"name": "RuleUpdated",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "admin",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "timestamp",
+						"type": "uint256"
+					}
+				],
+				"name": "SystemStarted",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "admin",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "timestamp",
+						"type": "uint256"
+					}
+				],
+				"name": "SystemStopped",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "uint256",
+						"name": "threatId",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "sourceIP",
+						"type": "string"
+					},
+					{
+						"indexed": false,
+						"internalType": "enum AdvancedAutoBlockchainFirewall.ThreatLevel",
+						"name": "level",
+						"type": "uint8"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "timestamp",
+						"type": "uint256"
+					}
+				],
+				"name": "ThreatDetected",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "thresholdType",
+						"type": "string"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "newValue",
+						"type": "uint256"
+					}
+				],
+				"name": "ThresholdUpdated",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_admin",
+						"type": "address"
+					}
+				],
+				"name": "addAdmin",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "authorizedAdmins",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "autoBlockThreshold",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "autoDetectionEnabled",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"name": "blacklistedIPs",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_name",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_sourceIP",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_destinationIP",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_sourcePort",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_destinationPort",
+						"type": "uint256"
+					},
+					{
+						"internalType": "enum AdvancedAutoBlockchainFirewall.Protocol",
+						"name": "_protocol",
+						"type": "uint8"
+					},
+					{
+						"internalType": "enum AdvancedAutoBlockchainFirewall.RuleAction",
+						"name": "_action",
+						"type": "uint8"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_priority",
+						"type": "uint256"
+					}
+				],
+				"name": "createRule",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_ruleId",
+						"type": "uint256"
+					}
+				],
+				"name": "deleteRule",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "disableAutoDetection",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "enableAutoDetection",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "firewallRules",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "id",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "sourceIP",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "destinationIP",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "sourcePort",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "destinationPort",
+						"type": "uint256"
+					},
+					{
+						"internalType": "enum AdvancedAutoBlockchainFirewall.Protocol",
+						"name": "protocol",
+						"type": "uint8"
+					},
+					{
+						"internalType": "enum AdvancedAutoBlockchainFirewall.RuleAction",
+						"name": "action",
+						"type": "uint8"
+					},
+					{
+						"internalType": "bool",
+						"name": "isActive",
+						"type": "bool"
+					},
+					{
+						"internalType": "uint256",
+						"name": "priority",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "createdAt",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "createdBy",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_ip",
+						"type": "string"
+					}
+				],
+				"name": "getIPTraffic",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "uint256",
+								"name": "connectionCount",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "lastAccessTime",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "suspicionScore",
+								"type": "uint256"
+							},
+							{
+								"internalType": "bool",
+								"name": "isMonitored",
+								"type": "bool"
+							}
+						],
+						"internalType": "struct AdvancedAutoBlockchainFirewall.IPTraffic",
+						"name": "",
+						"type": "tuple"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getNetworkStats",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "uint256",
+								"name": "totalPacketsScanned",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "threatsBlocked",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "alertsTriggered",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "autoBlockedIPs",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "lastUpdateTime",
+								"type": "uint256"
+							}
+						],
+						"internalType": "struct AdvancedAutoBlockchainFirewall.NetworkStats",
+						"name": "",
+						"type": "tuple"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_ruleId",
+						"type": "uint256"
+					}
+				],
+				"name": "getRule",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "uint256",
+								"name": "id",
+								"type": "uint256"
+							},
+							{
+								"internalType": "string",
+								"name": "name",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "sourceIP",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "destinationIP",
+								"type": "string"
+							},
+							{
+								"internalType": "uint256",
+								"name": "sourcePort",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "destinationPort",
+								"type": "uint256"
+							},
+							{
+								"internalType": "enum AdvancedAutoBlockchainFirewall.Protocol",
+								"name": "protocol",
+								"type": "uint8"
+							},
+							{
+								"internalType": "enum AdvancedAutoBlockchainFirewall.RuleAction",
+								"name": "action",
+								"type": "uint8"
+							},
+							{
+								"internalType": "bool",
+								"name": "isActive",
+								"type": "bool"
+							},
+							{
+								"internalType": "uint256",
+								"name": "priority",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "createdAt",
+								"type": "uint256"
+							},
+							{
+								"internalType": "address",
+								"name": "createdBy",
+								"type": "address"
+							}
+						],
+						"internalType": "struct AdvancedAutoBlockchainFirewall.FirewallRule",
+						"name": "",
+						"type": "tuple"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getRuleCount",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getSystemStatus",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "active",
+						"type": "bool"
+					},
+					{
+						"internalType": "bool",
+						"name": "autoDetection",
+						"type": "bool"
+					},
+					{
+						"internalType": "uint256",
+						"name": "threats",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "blocked",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "rules",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getThreatCount",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_threatId",
+						"type": "uint256"
+					}
+				],
+				"name": "getThreatLog",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "uint256",
+								"name": "id",
+								"type": "uint256"
+							},
+							{
+								"internalType": "string",
+								"name": "sourceIP",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "attackType",
+								"type": "string"
+							},
+							{
+								"internalType": "enum AdvancedAutoBlockchainFirewall.ThreatLevel",
+								"name": "level",
+								"type": "uint8"
+							},
+							{
+								"internalType": "uint256",
+								"name": "timestamp",
+								"type": "uint256"
+							},
+							{
+								"internalType": "string",
+								"name": "description",
+								"type": "string"
+							},
+							{
+								"internalType": "bool",
+								"name": "isBlocked",
+								"type": "bool"
+							},
+							{
+								"internalType": "uint256",
+								"name": "connectionAttempts",
+								"type": "uint256"
+							}
+						],
+						"internalType": "struct AdvancedAutoBlockchainFirewall.ThreatLog",
+						"name": "",
+						"type": "tuple"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"name": "ipTrafficData",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "connectionCount",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "lastAccessTime",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "suspicionScore",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bool",
+						"name": "isMonitored",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_address",
+						"type": "address"
+					}
+				],
+				"name": "isAdmin",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_ip",
+						"type": "string"
+					}
+				],
+				"name": "isIPBlacklisted",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_ip",
+						"type": "string"
+					}
+				],
+				"name": "isIPWhitelisted",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "isSystemActive",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_sourceIP",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_attackType",
+						"type": "string"
+					},
+					{
+						"internalType": "enum AdvancedAutoBlockchainFirewall.ThreatLevel",
+						"name": "_level",
+						"type": "uint8"
+					},
+					{
+						"internalType": "string",
+						"name": "_description",
+						"type": "string"
+					},
+					{
+						"internalType": "bool",
+						"name": "_shouldBlock",
+						"type": "bool"
+					}
+				],
+				"name": "logManualThreat",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_ip",
+						"type": "string"
+					}
+				],
+				"name": "manualBlacklist",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_ip",
+						"type": "string"
+					}
+				],
+				"name": "manualWhitelist",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "maxConnectionsPerMinute",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "networkStats",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "totalPacketsScanned",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "threatsBlocked",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "alertsTriggered",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "autoBlockedIPs",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "lastUpdateTime",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "owner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_admin",
+						"type": "address"
+					}
+				],
+				"name": "removeAdmin",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_ip",
+						"type": "string"
+					}
+				],
+				"name": "removeFromBlacklist",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_ip",
+						"type": "string"
+					}
+				],
+				"name": "removeFromWhitelist",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "ruleCounter",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_sourceIP",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_destinationIP",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_port",
+						"type": "uint256"
+					},
+					{
+						"internalType": "enum AdvancedAutoBlockchainFirewall.Protocol",
+						"name": "_protocol",
+						"type": "uint8"
+					}
+				],
+				"name": "scanPacket",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "allowed",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "startSystem",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "stopSystem",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "suspicionThreshold",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "threatCounter",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "threatLogs",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "id",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "sourceIP",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "attackType",
+						"type": "string"
+					},
+					{
+						"internalType": "enum AdvancedAutoBlockchainFirewall.ThreatLevel",
+						"name": "level",
+						"type": "uint8"
+					},
+					{
+						"internalType": "uint256",
+						"name": "timestamp",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "description",
+						"type": "string"
+					},
+					{
+						"internalType": "bool",
+						"name": "isBlocked",
+						"type": "bool"
+					},
+					{
+						"internalType": "uint256",
+						"name": "connectionAttempts",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_newThreshold",
+						"type": "uint256"
+					}
+				],
+				"name": "updateAutoBlockThreshold",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_newMax",
+						"type": "uint256"
+					}
+				],
+				"name": "updateMaxConnections",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_ruleId",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bool",
+						"name": "_isActive",
+						"type": "bool"
+					}
+				],
+				"name": "updateRuleStatus",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_newThreshold",
+						"type": "uint256"
+					}
+				],
+				"name": "updateSuspicionThreshold",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"name": "whitelistedIPs",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"details": "Auto-Detection Blockchain Firewall with Continuous Monitoring File Name: AdvancedAutoBlockchainFirewall.sol",
+			"kind": "dev",
+			"methods": {},
+			"title": "AdvancedAutoBlockchainFirewall",
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"AdvancedBlockchainFirewall.sol": "AdvancedAutoBlockchainFirewall"
+		},
+		"evmVersion": "prague",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"AdvancedBlockchainFirewall.sol": {
+			"keccak256": "0x723840a56c9d89ef953f9c82a92f43fb2cad184c3fff06ea1fd0c2f5afa8f566",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://f10bce434a08dca050e8af8c11b00b1218d3de09de30eb948c9e0906b04d4a95",
+				"dweb:/ipfs/QmesHgWSxMSQSKKPuF1tKyz3HtUWPniDwS4wVzLwNeq4NU"
+			]
+		}
+	},
+	"version": 1
+}

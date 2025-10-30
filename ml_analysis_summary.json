@@ -1,0 +1,47 @@
+{
+  "total_connections": 50,
+  "anomalies_detected": 0,
+  "threats_detected": 5,
+  "average_threat_probability": 0.09999999999999999,
+  "high_risk_connections": 0,
+  "analysis_timestamp": "2025-08-22T10:24:01.136548",
+  "model_accuracy": 0.8184637506207991,
+  "feature_importance": {
+    "network_packet_size_mean": 0.4137178428450706,
+    "network_packet_size_std": 0.10233252047322071,
+    "network_packet_size_max": 0.8008654774402051,
+    "network_packet_size_min": 0.3624603069285498,
+    "network_unique_ports": 0.41379939201010807,
+    "network_protocol_diversity": 0.5370354469438653,
+    "payload_avg_entropy": 0.4583783470253191,
+    "payload_max_entropy": 0.6202734478632789,
+    "payload_suspicious_strings": 0.33778851225506756,
+    "payload_compression_ratio": 0.5033017994609743,
+    "behavioral_avg_interval": 0.20633250080114346,
+    "behavioral_interval_variance": 0.30015559370221484,
+    "behavioral_burst_detection": 0.5611123303231418,
+    "behavioral_regularity_score": 0.7643972825155358
+  },
+  "threat_intelligence": {
+    "threat_family": "unknown",
+    "attack_vector": "unknown",
+    "severity": "low",
+    "indicators": [
+      "Threat score: 0.10",
+      "Classification: benign",
+      "Model agreement: 0.20"
+    ],
+    "attribution": "localized_threat_actor",
+    "mitigation_strategies": [
+      "Enhanced monitoring",
+      "Traffic filtering",
+      "Signature-based detection",
+      "Behavioral analysis"
+    ]
+  },
+  "recommendations": [
+    "LOW: Continue normal operations",
+    "Maintain standard monitoring",
+    "Regular security assessments"
+  ]
+}

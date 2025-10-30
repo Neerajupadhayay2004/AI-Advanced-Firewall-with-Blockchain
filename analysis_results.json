@@ -1,0 +1,2083 @@
+{
+  "threats_detected": 21,
+  "attacks_blocked": 18,
+  "network_health": 20,
+  "active_connections": 94,
+  "threat_level": "CRITICAL",
+  "last_update": "2025-08-22T10:32:01.469986",
+  "live_threats": [
+    {
+      "id": "THR-1755838278-4186",
+      "type": "XSS",
+      "severity": "HIGH",
+      "source_ip": "221.197.133.78",
+      "source_country": "DE",
+      "target_port": 3389,
+      "timestamp": "2025-08-22T10:21:18.366874",
+      "blocked": true,
+      "confidence": 0.8
+    },
+    {
+      "id": "THR-1755838313-3881",
+      "type": "XSS",
+      "severity": "CRITICAL",
+      "source_ip": "196.34.204.196",
+      "source_country": "DE",
+      "target_port": 8080,
+      "timestamp": "2025-08-22T10:21:53.479525",
+      "blocked": false,
+      "confidence": 0.94
+    },
+    {
+      "id": "THR-1755838333-5920",
+      "type": "XSS",
+      "severity": "MEDIUM",
+      "source_ip": "125.58.210.199",
+      "source_country": "RU",
+      "target_port": 21,
+      "timestamp": "2025-08-22T10:22:13.535779",
+      "blocked": false,
+      "confidence": 0.8
+    },
+    {
+      "id": "THR-1755838363-3533",
+      "type": "SQL Injection",
+      "severity": "CRITICAL",
+      "source_ip": "109.115.36.167",
+      "source_country": "BR",
+      "target_port": 3389,
+      "timestamp": "2025-08-22T10:22:43.649200",
+      "blocked": false,
+      "confidence": 0.85
+    },
+    {
+      "id": "THR-1755838388-7663",
+      "type": "Phishing",
+      "severity": "MEDIUM",
+      "source_ip": "59.17.205.212",
+      "source_country": "RU",
+      "target_port": 8080,
+      "timestamp": "2025-08-22T10:23:08.730150",
+      "blocked": false,
+      "confidence": 0.78
+    },
+    {
+      "id": "THR-1755838398-6257",
+      "type": "Phishing",
+      "severity": "MEDIUM",
+      "source_ip": "86.124.64.19",
+      "source_country": "RU",
+      "target_port": 21,
+      "timestamp": "2025-08-22T10:23:18.759809",
+      "blocked": false,
+      "confidence": 0.79
+    },
+    {
+      "id": "THR-1755838413-9780",
+      "type": "Brute Force",
+      "severity": "HIGH",
+      "source_ip": "78.242.67.102",
+      "source_country": "DE",
+      "target_port": 443,
+      "timestamp": "2025-08-22T10:23:33.818553",
+      "blocked": true,
+      "confidence": 0.8
+    },
+    {
+      "id": "THR-1755838423-1547",
+      "type": "Phishing",
+      "severity": "CRITICAL",
+      "source_ip": "143.86.238.254",
+      "source_country": "UK",
+      "target_port": 8080,
+      "timestamp": "2025-08-22T10:23:43.853308",
+      "blocked": true,
+      "confidence": 0.88
+    },
+    {
+      "id": "THR-1755838433-7489",
+      "type": "SQL Injection",
+      "severity": "CRITICAL",
+      "source_ip": "72.234.63.33",
+      "source_country": "KR",
+      "target_port": 22,
+      "timestamp": "2025-08-22T10:23:53.886205",
+      "blocked": true,
+      "confidence": 0.83
+    },
+    {
+      "id": "THR-1755838443-3180",
+      "type": "Brute Force",
+      "severity": "LOW",
+      "source_ip": "163.119.1.195",
+      "source_country": "BR",
+      "target_port": 8080,
+      "timestamp": "2025-08-22T10:24:03.922456",
+      "blocked": false,
+      "confidence": 0.84
+    },
+    {
+      "id": "THR-1755838453-3650",
+      "type": "SQL Injection",
+      "severity": "LOW",
+      "source_ip": "220.238.194.98",
+      "source_country": "FR",
+      "target_port": 21,
+      "timestamp": "2025-08-22T10:24:13.952088",
+      "blocked": true,
+      "confidence": 0.99
+    },
+    {
+      "id": "THR-1755838474-5947",
+      "type": "XSS",
+      "severity": "LOW",
+      "source_ip": "6.58.16.62",
+      "source_country": "UK",
+      "target_port": 22,
+      "timestamp": "2025-08-22T10:24:34.026338",
+      "blocked": true,
+      "confidence": 0.85
+    },
+    {
+      "id": "THR-1755838484-2328",
+      "type": "SQL Injection",
+      "severity": "CRITICAL",
+      "source_ip": "113.202.84.205",
+      "source_country": "KR",
+      "target_port": 443,
+      "timestamp": "2025-08-22T10:24:44.064774",
+      "blocked": false,
+      "confidence": 0.83
+    },
+    {
+      "id": "THR-1755838504-2042",
+      "type": "DDoS",
+      "severity": "CRITICAL",
+      "source_ip": "143.22.181.47",
+      "source_country": "FR",
+      "target_port": 8080,
+      "timestamp": "2025-08-22T10:25:04.147269",
+      "blocked": true,
+      "confidence": 0.83
+    },
+    {
+      "id": "THR-1755838524-3514",
+      "type": "Phishing",
+      "severity": "HIGH",
+      "source_ip": "181.84.227.167",
+      "source_country": "RU",
+      "target_port": 8080,
+      "timestamp": "2025-08-22T10:25:24.211068",
+      "blocked": false,
+      "confidence": 0.73
+    },
+    {
+      "id": "THR-1755838534-9066",
+      "type": "Brute Force",
+      "severity": "HIGH",
+      "source_ip": "94.29.219.218",
+      "source_country": "UK",
+      "target_port": 3389,
+      "timestamp": "2025-08-22T10:25:34.246399",
+      "blocked": false,
+      "confidence": 0.79
+    },
+    {
+      "id": "THR-1755838549-6748",
+      "type": "Brute Force",
+      "severity": "MEDIUM",
+      "source_ip": "204.5.168.144",
+      "source_country": "UK",
+      "target_port": 22,
+      "timestamp": "2025-08-22T10:25:49.298892",
+      "blocked": false,
+      "confidence": 0.82
+    },
+    {
+      "id": "THR-1755838554-2730",
+      "type": "Phishing",
+      "severity": "LOW",
+      "source_ip": "4.67.98.57",
+      "source_country": "JP",
+      "target_port": 3389,
+      "timestamp": "2025-08-22T10:25:54.320872",
+      "blocked": false,
+      "confidence": 0.81
+    },
+    {
+      "id": "THR-1755838569-5372",
+      "type": "Phishing",
+      "severity": "CRITICAL",
+      "source_ip": "50.130.45.8",
+      "source_country": "JP",
+      "target_port": 22,
+      "timestamp": "2025-08-22T10:26:09.377790",
+      "blocked": true,
+      "confidence": 0.78
+    },
+    {
+      "id": "THR-1755838579-3708",
+      "type": "SQL Injection",
+      "severity": "MEDIUM",
+      "source_ip": "84.253.222.94",
+      "source_country": "UK",
+      "target_port": 8080,
+      "timestamp": "2025-08-22T10:26:19.408539",
+      "blocked": true,
+      "confidence": 0.94
+    },
+    {
+      "id": "THR-1755838593-2794",
+      "type": "Malware",
+      "severity": "CRITICAL",
+      "source_ip": "230.244.241.122",
+      "source_country": "DE",
+      "target_port": 22,
+      "timestamp": "2025-08-22T10:26:33.326748",
+      "blocked": false,
+      "confidence": 0.84
+    },
+    {
+      "id": "THR-1755838605-1664",
+      "type": "Phishing",
+      "severity": "LOW",
+      "source_ip": "234.8.245.41",
+      "source_country": "FR",
+      "target_port": 22,
+      "timestamp": "2025-08-22T10:26:45.350781",
+      "blocked": true,
+      "confidence": 0.72
+    },
+    {
+      "id": "THR-1755838626-9679",
+      "type": "Brute Force",
+      "severity": "MEDIUM",
+      "source_ip": "232.172.97.230",
+      "source_country": "US",
+      "target_port": 21,
+      "timestamp": "2025-08-22T10:27:06.384904",
+      "blocked": false,
+      "confidence": 0.79
+    },
+    {
+      "id": "THR-1755838640-1399",
+      "type": "SQL Injection",
+      "severity": "MEDIUM",
+      "source_ip": "33.158.226.213",
+      "source_country": "JP",
+      "target_port": 3389,
+      "timestamp": "2025-08-22T10:27:20.408811",
+      "blocked": true,
+      "confidence": 0.85
+    },
+    {
+      "id": "THR-1755838677-4260",
+      "type": "SQL Injection",
+      "severity": "MEDIUM",
+      "source_ip": "41.84.245.229",
+      "source_country": "DE",
+      "target_port": 3389,
+      "timestamp": "2025-08-22T10:27:57.515767",
+      "blocked": false,
+      "confidence": 0.74
+    },
+    {
+      "id": "THR-1755838682-8283",
+      "type": "Phishing",
+      "severity": "CRITICAL",
+      "source_ip": "42.221.4.66",
+      "source_country": "IN",
+      "target_port": 3389,
+      "timestamp": "2025-08-22T10:28:02.529905",
+      "blocked": false,
+      "confidence": 0.9
+    },
+    {
+      "id": "THR-1755838692-3741",
+      "type": "Phishing",
+      "severity": "CRITICAL",
+      "source_ip": "50.139.98.66",
+      "source_country": "KR",
+      "target_port": 22,
+      "timestamp": "2025-08-22T10:28:12.575782",
+      "blocked": true,
+      "confidence": 0.81
+    },
+    {
+      "id": "THR-1755838697-4657",
+      "type": "SQL Injection",
+      "severity": "MEDIUM",
+      "source_ip": "244.139.67.171",
+      "source_country": "KR",
+      "target_port": 21,
+      "timestamp": "2025-08-22T10:28:17.588855",
+      "blocked": true,
+      "confidence": 0.9
+    },
+    {
+      "id": "THR-1755838727-6885",
+      "type": "XSS",
+      "severity": "LOW",
+      "source_ip": "93.139.34.37",
+      "source_country": "US",
+      "target_port": 21,
+      "timestamp": "2025-08-22T10:28:47.684887",
+      "blocked": false,
+      "confidence": 0.96
+    },
+    {
+      "id": "THR-1755838732-5189",
+      "type": "DDoS",
+      "severity": "HIGH",
+      "source_ip": "238.252.177.14",
+      "source_country": "CN",
+      "target_port": 8080,
+      "timestamp": "2025-08-22T10:28:52.701613",
+      "blocked": true,
+      "confidence": 0.85
+    },
+    {
+      "id": "THR-1755838737-4896",
+      "type": "Malware",
+      "severity": "HIGH",
+      "source_ip": "201.218.77.3",
+      "source_country": "US",
+      "target_port": 8080,
+      "timestamp": "2025-08-22T10:28:57.719392",
+      "blocked": false,
+      "confidence": 0.75
+    },
+    {
+      "id": "THR-1755838757-4911",
+      "type": "XSS",
+      "severity": "CRITICAL",
+      "source_ip": "30.233.158.174",
+      "source_country": "DE",
+      "target_port": 21,
+      "timestamp": "2025-08-22T10:29:17.862863",
+      "blocked": true,
+      "confidence": 0.96
+    },
+    {
+      "id": "THR-1755838782-9982",
+      "type": "SQL Injection",
+      "severity": "LOW",
+      "source_ip": "42.236.163.234",
+      "source_country": "KR",
+      "target_port": 8080,
+      "timestamp": "2025-08-22T10:29:42.950032",
+      "blocked": false,
+      "confidence": 0.73
+    },
+    {
+      "id": "THR-1755838828-1635",
+      "type": "DDoS",
+      "severity": "CRITICAL",
+      "source_ip": "134.92.12.223",
+      "source_country": "IN",
+      "target_port": 8080,
+      "timestamp": "2025-08-22T10:30:28.232897",
+      "blocked": false,
+      "confidence": 0.9
+    },
+    {
+      "id": "THR-1755838834-8738",
+      "type": "DDoS",
+      "severity": "LOW",
+      "source_ip": "9.56.112.241",
+      "source_country": "IN",
+      "target_port": 443,
+      "timestamp": "2025-08-22T10:30:34.289273",
+      "blocked": true,
+      "confidence": 0.73
+    },
+    {
+      "id": "THR-1755838858-1898",
+      "type": "SQL Injection",
+      "severity": "HIGH",
+      "source_ip": "132.98.179.26",
+      "source_country": "US",
+      "target_port": 21,
+      "timestamp": "2025-08-22T10:30:58.355789",
+      "blocked": false,
+      "confidence": 0.8
+    },
+    {
+      "id": "THR-1755838879-4001",
+      "type": "Malware",
+      "severity": "LOW",
+      "source_ip": "152.4.95.135",
+      "source_country": "JP",
+      "target_port": 8080,
+      "timestamp": "2025-08-22T10:31:19.396995",
+      "blocked": true,
+      "confidence": 0.76
+    },
+    {
+      "id": "THR-1755838907-8638",
+      "type": "Brute Force",
+      "severity": "LOW",
+      "source_ip": "88.10.87.38",
+      "source_country": "CN",
+      "target_port": 22,
+      "timestamp": "2025-08-22T10:31:47.443842",
+      "blocked": false,
+      "confidence": 0.88
+    },
+    {
+      "id": "THR-1755838921-6359",
+      "type": "SQL Injection",
+      "severity": "CRITICAL",
+      "source_ip": "142.241.38.211",
+      "source_country": "IN",
+      "target_port": 8080,
+      "timestamp": "2025-08-22T10:32:01.469724",
+      "blocked": true,
+      "confidence": 0.73
+    }
+  ],
+  "network_traffic": [
+    {
+      "timestamp": "2025-08-22T10:22:58.694756",
+      "bytes_in": 3461464,
+      "bytes_out": 2935921,
+      "packets_in": 9895,
+      "packets_out": 2527,
+      "connections": 275,
+      "anomaly_score": 0.964
+    },
+    {
+      "timestamp": "2025-08-22T10:23:03.712931",
+      "bytes_in": 5257098,
+      "bytes_out": 3879810,
+      "packets_in": 4758,
+      "packets_out": 1958,
+      "connections": 325,
+      "anomaly_score": 0.509
+    },
+    {
+      "timestamp": "2025-08-22T10:23:08.730192",
+      "bytes_in": 2453339,
+      "bytes_out": 4153249,
+      "packets_in": 6340,
+      "packets_out": 644,
+      "connections": 259,
+      "anomaly_score": 0.196
+    },
+    {
+      "timestamp": "2025-08-22T10:23:13.745773",
+      "bytes_in": 6687860,
+      "bytes_out": 1111987,
+      "packets_in": 3945,
+      "packets_out": 1720,
+      "connections": 465,
+      "anomaly_score": 0.414
+    },
+    {
+      "timestamp": "2025-08-22T10:23:18.759839",
+      "bytes_in": 2694720,
+      "bytes_out": 4838356,
+      "packets_in": 3088,
+      "packets_out": 2459,
+      "connections": 344,
+      "anomaly_score": 0.661
+    },
+    {
+      "timestamp": "2025-08-22T10:23:23.778732",
+      "bytes_in": 7150641,
+      "bytes_out": 915951,
+      "packets_in": 4851,
+      "packets_out": 3219,
+      "connections": 55,
+      "anomaly_score": 0.73
+    },
+    {
+      "timestamp": "2025-08-22T10:23:28.797239",
+      "bytes_in": 1698270,
+      "bytes_out": 1414454,
+      "packets_in": 8283,
+      "packets_out": 1903,
+      "connections": 386,
+      "anomaly_score": 0.277
+    },
+    {
+      "timestamp": "2025-08-22T10:23:33.818587",
+      "bytes_in": 8774541,
+      "bytes_out": 1930658,
+      "packets_in": 9800,
+      "packets_out": 3399,
+      "connections": 431,
+      "anomaly_score": 0.725
+    },
+    {
+      "timestamp": "2025-08-22T10:23:38.837835",
+      "bytes_in": 3470674,
+      "bytes_out": 4431519,
+      "packets_in": 8702,
+      "packets_out": 4915,
+      "connections": 161,
+      "anomaly_score": 0.186
+    },
+    {
+      "timestamp": "2025-08-22T10:23:43.853331",
+      "bytes_in": 7103156,
+      "bytes_out": 2417210,
+      "packets_in": 5325,
+      "packets_out": 1348,
+      "connections": 190,
+      "anomaly_score": 0.266
+    },
+    {
+      "timestamp": "2025-08-22T10:23:48.869377",
+      "bytes_in": 8508124,
+      "bytes_out": 2670396,
+      "packets_in": 9385,
+      "packets_out": 1887,
+      "connections": 219,
+      "anomaly_score": 0.007
+    },
+    {
+      "timestamp": "2025-08-22T10:23:53.886246",
+      "bytes_in": 1640613,
+      "bytes_out": 974162,
+      "packets_in": 3729,
+      "packets_out": 2780,
+      "connections": 388,
+      "anomaly_score": 0.354
+    },
+    {
+      "timestamp": "2025-08-22T10:23:58.903820",
+      "bytes_in": 8092251,
+      "bytes_out": 4537465,
+      "packets_in": 7745,
+      "packets_out": 3605,
+      "connections": 418,
+      "anomaly_score": 0.397
+    },
+    {
+      "timestamp": "2025-08-22T10:24:03.922487",
+      "bytes_in": 1176929,
+      "bytes_out": 3532376,
+      "packets_in": 1272,
+      "packets_out": 4658,
+      "connections": 185,
+      "anomaly_score": 0.188
+    },
+    {
+      "timestamp": "2025-08-22T10:24:08.937475",
+      "bytes_in": 2827427,
+      "bytes_out": 3064057,
+      "packets_in": 4531,
+      "packets_out": 2032,
+      "connections": 216,
+      "anomaly_score": 0.26
+    },
+    {
+      "timestamp": "2025-08-22T10:24:13.952121",
+      "bytes_in": 1017792,
+      "bytes_out": 1147384,
+      "packets_in": 1547,
+      "packets_out": 2744,
+      "connections": 174,
+      "anomaly_score": 0.577
+    },
+    {
+      "timestamp": "2025-08-22T10:24:18.968242",
+      "bytes_in": 2742626,
+      "bytes_out": 2694227,
+      "packets_in": 8344,
+      "packets_out": 3514,
+      "connections": 98,
+      "anomaly_score": 0.609
+    },
+    {
+      "timestamp": "2025-08-22T10:24:23.984073",
+      "bytes_in": 2241387,
+      "bytes_out": 929117,
+      "packets_in": 8212,
+      "packets_out": 1981,
+      "connections": 69,
+      "anomaly_score": 0.961
+    },
+    {
+      "timestamp": "2025-08-22T10:24:29.003800",
+      "bytes_in": 9357895,
+      "bytes_out": 615144,
+      "packets_in": 2788,
+      "packets_out": 1216,
+      "connections": 311,
+      "anomaly_score": 0.801
+    },
+    {
+      "timestamp": "2025-08-22T10:24:34.026363",
+      "bytes_in": 9216290,
+      "bytes_out": 3893985,
+      "packets_in": 2142,
+      "packets_out": 1377,
+      "connections": 66,
+      "anomaly_score": 0.602
+    },
+    {
+      "timestamp": "2025-08-22T10:24:39.045760",
+      "bytes_in": 8166636,
+      "bytes_out": 4997738,
+      "packets_in": 6264,
+      "packets_out": 3204,
+      "connections": 428,
+      "anomaly_score": 0.246
+    },
+    {
+      "timestamp": "2025-08-22T10:24:44.064796",
+      "bytes_in": 4714988,
+      "bytes_out": 4765455,
+      "packets_in": 8105,
+      "packets_out": 4320,
+      "connections": 174,
+      "anomaly_score": 0.898
+    },
+    {
+      "timestamp": "2025-08-22T10:24:49.083693",
+      "bytes_in": 3805901,
+      "bytes_out": 2203035,
+      "packets_in": 8131,
+      "packets_out": 3136,
+      "connections": 492,
+      "anomaly_score": 0.02
+    },
+    {
+      "timestamp": "2025-08-22T10:24:54.105882",
+      "bytes_in": 7234469,
+      "bytes_out": 2033007,
+      "packets_in": 8973,
+      "packets_out": 2961,
+      "connections": 214,
+      "anomaly_score": 0.241
+    },
+    {
+      "timestamp": "2025-08-22T10:24:59.126702",
+      "bytes_in": 4323310,
+      "bytes_out": 4599146,
+      "packets_in": 4720,
+      "packets_out": 4116,
+      "connections": 490,
+      "anomaly_score": 0.158
+    },
+    {
+      "timestamp": "2025-08-22T10:25:04.147304",
+      "bytes_in": 3094409,
+      "bytes_out": 2691184,
+      "packets_in": 9438,
+      "packets_out": 2058,
+      "connections": 494,
+      "anomaly_score": 0.86
+    },
+    {
+      "timestamp": "2025-08-22T10:25:09.164410",
+      "bytes_in": 8339654,
+      "bytes_out": 1946590,
+      "packets_in": 3483,
+      "packets_out": 1737,
+      "connections": 180,
+      "anomaly_score": 0.691
+    },
+    {
+      "timestamp": "2025-08-22T10:25:14.179810",
+      "bytes_in": 3156717,
+      "bytes_out": 1945116,
+      "packets_in": 1211,
+      "packets_out": 3652,
+      "connections": 277,
+      "anomaly_score": 0.469
+    },
+    {
+      "timestamp": "2025-08-22T10:25:19.195530",
+      "bytes_in": 5348579,
+      "bytes_out": 4285504,
+      "packets_in": 6210,
+      "packets_out": 3579,
+      "connections": 308,
+      "anomaly_score": 0.455
+    },
+    {
+      "timestamp": "2025-08-22T10:25:24.211101",
+      "bytes_in": 2229225,
+      "bytes_out": 3619779,
+      "packets_in": 1245,
+      "packets_out": 2430,
+      "connections": 385,
+      "anomaly_score": 0.515
+    },
+    {
+      "timestamp": "2025-08-22T10:25:29.225836",
+      "bytes_in": 7629866,
+      "bytes_out": 1760721,
+      "packets_in": 3496,
+      "packets_out": 3672,
+      "connections": 458,
+      "anomaly_score": 0.835
+    },
+    {
+      "timestamp": "2025-08-22T10:25:34.246434",
+      "bytes_in": 8654809,
+      "bytes_out": 3212547,
+      "packets_in": 7221,
+      "packets_out": 1319,
+      "connections": 107,
+      "anomaly_score": 0.088
+    },
+    {
+      "timestamp": "2025-08-22T10:25:39.260464",
+      "bytes_in": 1406707,
+      "bytes_out": 4132483,
+      "packets_in": 6911,
+      "packets_out": 4845,
+      "connections": 220,
+      "anomaly_score": 0.186
+    },
+    {
+      "timestamp": "2025-08-22T10:25:44.279294",
+      "bytes_in": 3776863,
+      "bytes_out": 3303202,
+      "packets_in": 6444,
+      "packets_out": 3508,
+      "connections": 464,
+      "anomaly_score": 0.638
+    },
+    {
+      "timestamp": "2025-08-22T10:25:49.298932",
+      "bytes_in": 3839216,
+      "bytes_out": 3878084,
+      "packets_in": 1314,
+      "packets_out": 2206,
+      "connections": 476,
+      "anomaly_score": 0.115
+    },
+    {
+      "timestamp": "2025-08-22T10:25:54.320904",
+      "bytes_in": 1346215,
+      "bytes_out": 2672523,
+      "packets_in": 5780,
+      "packets_out": 2033,
+      "connections": 148,
+      "anomaly_score": 0.715
+    },
+    {
+      "timestamp": "2025-08-22T10:25:59.339824",
+      "bytes_in": 4735803,
+      "bytes_out": 1721560,
+      "packets_in": 2774,
+      "packets_out": 3754,
+      "connections": 307,
+      "anomaly_score": 0.047
+    },
+    {
+      "timestamp": "2025-08-22T10:26:04.361949",
+      "bytes_in": 2096022,
+      "bytes_out": 3671516,
+      "packets_in": 9023,
+      "packets_out": 2625,
+      "connections": 397,
+      "anomaly_score": 0.496
+    },
+    {
+      "timestamp": "2025-08-22T10:26:09.377813",
+      "bytes_in": 4607243,
+      "bytes_out": 4875725,
+      "packets_in": 2133,
+      "packets_out": 2553,
+      "connections": 200,
+      "anomaly_score": 0.364
+    },
+    {
+      "timestamp": "2025-08-22T10:26:14.392936",
+      "bytes_in": 2345118,
+      "bytes_out": 1549577,
+      "packets_in": 8360,
+      "packets_out": 1450,
+      "connections": 475,
+      "anomaly_score": 0.874
+    },
+    {
+      "timestamp": "2025-08-22T10:26:19.408571",
+      "bytes_in": 6179099,
+      "bytes_out": 3633048,
+      "packets_in": 7060,
+      "packets_out": 3708,
+      "connections": 331,
+      "anomaly_score": 0.211
+    },
+    {
+      "timestamp": "2025-08-22T10:26:26.418805",
+      "bytes_in": 7361642,
+      "bytes_out": 2184071,
+      "packets_in": 9462,
+      "packets_out": 4315,
+      "connections": 245,
+      "anomaly_score": 0.853
+    },
+    {
+      "timestamp": "2025-08-22T10:26:33.326765",
+      "bytes_in": 8781846,
+      "bytes_out": 4294297,
+      "packets_in": 2025,
+      "packets_out": 3663,
+      "connections": 128,
+      "anomaly_score": 0.407
+    },
+    {
+      "timestamp": "2025-08-22T10:26:38.339638",
+      "bytes_in": 4497458,
+      "bytes_out": 3492212,
+      "packets_in": 1623,
+      "packets_out": 4089,
+      "connections": 77,
+      "anomaly_score": 0.057
+    },
+    {
+      "timestamp": "2025-08-22T10:26:45.350806",
+      "bytes_in": 3932617,
+      "bytes_out": 2510437,
+      "packets_in": 5001,
+      "packets_out": 854,
+      "connections": 398,
+      "anomaly_score": 0.38
+    },
+    {
+      "timestamp": "2025-08-22T10:26:52.361787",
+      "bytes_in": 1368545,
+      "bytes_out": 751722,
+      "packets_in": 1451,
+      "packets_out": 4987,
+      "connections": 250,
+      "anomaly_score": 0.872
+    },
+    {
+      "timestamp": "2025-08-22T10:26:59.374734",
+      "bytes_in": 6780586,
+      "bytes_out": 3633470,
+      "packets_in": 1167,
+      "packets_out": 4674,
+      "connections": 178,
+      "anomaly_score": 0.742
+    },
+    {
+      "timestamp": "2025-08-22T10:27:06.384943",
+      "bytes_in": 5694360,
+      "bytes_out": 4017749,
+      "packets_in": 2655,
+      "packets_out": 1363,
+      "connections": 492,
+      "anomaly_score": 0.159
+    },
+    {
+      "timestamp": "2025-08-22T10:27:13.397785",
+      "bytes_in": 4683860,
+      "bytes_out": 3151311,
+      "packets_in": 4754,
+      "packets_out": 2001,
+      "connections": 406,
+      "anomaly_score": 0.33
+    },
+    {
+      "timestamp": "2025-08-22T10:27:20.408833",
+      "bytes_in": 1162510,
+      "bytes_out": 1574997,
+      "packets_in": 6082,
+      "packets_out": 4846,
+      "connections": 469,
+      "anomaly_score": 0.025
+    },
+    {
+      "timestamp": "2025-08-22T10:27:27.419838",
+      "bytes_in": 3986375,
+      "bytes_out": 1080524,
+      "packets_in": 4279,
+      "packets_out": 1681,
+      "connections": 368,
+      "anomaly_score": 0.88
+    },
+    {
+      "timestamp": "2025-08-22T10:27:34.430841",
+      "bytes_in": 2612681,
+      "bytes_out": 2530849,
+      "packets_in": 6684,
+      "packets_out": 1574,
+      "connections": 269,
+      "anomaly_score": 0.225
+    },
+    {
+      "timestamp": "2025-08-22T10:27:41.443778",
+      "bytes_in": 8949179,
+      "bytes_out": 699121,
+      "packets_in": 2036,
+      "packets_out": 1742,
+      "connections": 169,
+      "anomaly_score": 0.947
+    },
+    {
+      "timestamp": "2025-08-22T10:27:47.485107",
+      "bytes_in": 2496907,
+      "bytes_out": 4215700,
+      "packets_in": 4937,
+      "packets_out": 936,
+      "connections": 84,
+      "anomaly_score": 0.837
+    },
+    {
+      "timestamp": "2025-08-22T10:27:52.500832",
+      "bytes_in": 5393122,
+      "bytes_out": 2008180,
+      "packets_in": 3027,
+      "packets_out": 2185,
+      "connections": 333,
+      "anomaly_score": 0.528
+    },
+    {
+      "timestamp": "2025-08-22T10:27:57.515790",
+      "bytes_in": 9568760,
+      "bytes_out": 1380120,
+      "packets_in": 3876,
+      "packets_out": 2686,
+      "connections": 69,
+      "anomaly_score": 0.621
+    },
+    {
+      "timestamp": "2025-08-22T10:28:02.529942",
+      "bytes_in": 7436025,
+      "bytes_out": 4157330,
+      "packets_in": 8186,
+      "packets_out": 4304,
+      "connections": 267,
+      "anomaly_score": 0.391
+    },
+    {
+      "timestamp": "2025-08-22T10:28:07.554809",
+      "bytes_in": 6600835,
+      "bytes_out": 4992938,
+      "packets_in": 9423,
+      "packets_out": 1715,
+      "connections": 460,
+      "anomaly_score": 0.905
+    },
+    {
+      "timestamp": "2025-08-22T10:28:12.575801",
+      "bytes_in": 9894084,
+      "bytes_out": 4448548,
+      "packets_in": 5018,
+      "packets_out": 4861,
+      "connections": 434,
+      "anomaly_score": 0.338
+    },
+    {
+      "timestamp": "2025-08-22T10:28:17.588897",
+      "bytes_in": 5145449,
+      "bytes_out": 1964297,
+      "packets_in": 4883,
+      "packets_out": 1516,
+      "connections": 177,
+      "anomaly_score": 0.061
+    },
+    {
+      "timestamp": "2025-08-22T10:28:22.604372",
+      "bytes_in": 5255633,
+      "bytes_out": 4375229,
+      "packets_in": 5772,
+      "packets_out": 2656,
+      "connections": 281,
+      "anomaly_score": 0.209
+    },
+    {
+      "timestamp": "2025-08-22T10:28:27.619853",
+      "bytes_in": 4702475,
+      "bytes_out": 881088,
+      "packets_in": 2767,
+      "packets_out": 4605,
+      "connections": 430,
+      "anomaly_score": 0.572
+    },
+    {
+      "timestamp": "2025-08-22T10:28:32.638841",
+      "bytes_in": 1067512,
+      "bytes_out": 4785799,
+      "packets_in": 5593,
+      "packets_out": 3234,
+      "connections": 352,
+      "anomaly_score": 0.933
+    },
+    {
+      "timestamp": "2025-08-22T10:28:37.655026",
+      "bytes_in": 8316357,
+      "bytes_out": 3719848,
+      "packets_in": 5856,
+      "packets_out": 543,
+      "connections": 123,
+      "anomaly_score": 0.458
+    },
+    {
+      "timestamp": "2025-08-22T10:28:42.670192",
+      "bytes_in": 1479450,
+      "bytes_out": 4909769,
+      "packets_in": 1124,
+      "packets_out": 1866,
+      "connections": 165,
+      "anomaly_score": 0.726
+    },
+    {
+      "timestamp": "2025-08-22T10:28:47.684923",
+      "bytes_in": 4106085,
+      "bytes_out": 3569322,
+      "packets_in": 1455,
+      "packets_out": 2542,
+      "connections": 196,
+      "anomaly_score": 0.541
+    },
+    {
+      "timestamp": "2025-08-22T10:28:52.701635",
+      "bytes_in": 1783939,
+      "bytes_out": 1296470,
+      "packets_in": 5500,
+      "packets_out": 3191,
+      "connections": 58,
+      "anomaly_score": 0.769
+    },
+    {
+      "timestamp": "2025-08-22T10:28:57.719428",
+      "bytes_in": 7562999,
+      "bytes_out": 3610352,
+      "packets_in": 3231,
+      "packets_out": 834,
+      "connections": 100,
+      "anomaly_score": 0.53
+    },
+    {
+      "timestamp": "2025-08-22T10:29:02.736842",
+      "bytes_in": 8222600,
+      "bytes_out": 2836686,
+      "packets_in": 8926,
+      "packets_out": 3656,
+      "connections": 256,
+      "anomaly_score": 0.499
+    },
+    {
+      "timestamp": "2025-08-22T10:29:07.754831",
+      "bytes_in": 8583217,
+      "bytes_out": 4593945,
+      "packets_in": 4065,
+      "packets_out": 4682,
+      "connections": 215,
+      "anomaly_score": 0.02
+    },
+    {
+      "timestamp": "2025-08-22T10:29:12.772453",
+      "bytes_in": 3482505,
+      "bytes_out": 3324194,
+      "packets_in": 1860,
+      "packets_out": 4871,
+      "connections": 300,
+      "anomaly_score": 0.803
+    },
+    {
+      "timestamp": "2025-08-22T10:29:17.862895",
+      "bytes_in": 8925360,
+      "bytes_out": 4512800,
+      "packets_in": 3949,
+      "packets_out": 1523,
+      "connections": 185,
+      "anomaly_score": 0.903
+    },
+    {
+      "timestamp": "2025-08-22T10:29:22.880847",
+      "bytes_in": 9583241,
+      "bytes_out": 2459558,
+      "packets_in": 8406,
+      "packets_out": 2733,
+      "connections": 188,
+      "anomaly_score": 0.448
+    },
+    {
+      "timestamp": "2025-08-22T10:29:27.896823",
+      "bytes_in": 7472298,
+      "bytes_out": 4459069,
+      "packets_in": 1788,
+      "packets_out": 1020,
+      "connections": 425,
+      "anomaly_score": 0.066
+    },
+    {
+      "timestamp": "2025-08-22T10:29:32.913338",
+      "bytes_in": 8155566,
+      "bytes_out": 4049990,
+      "packets_in": 6031,
+      "packets_out": 4178,
+      "connections": 462,
+      "anomaly_score": 0.207
+    },
+    {
+      "timestamp": "2025-08-22T10:29:37.929834",
+      "bytes_in": 2456465,
+      "bytes_out": 3740063,
+      "packets_in": 2248,
+      "packets_out": 1420,
+      "connections": 258,
+      "anomaly_score": 0.791
+    },
+    {
+      "timestamp": "2025-08-22T10:29:42.950075",
+      "bytes_in": 5588602,
+      "bytes_out": 4568178,
+      "packets_in": 1386,
+      "packets_out": 1342,
+      "connections": 69,
+      "anomaly_score": 0.989
+    },
+    {
+      "timestamp": "2025-08-22T10:29:47.972703",
+      "bytes_in": 3677812,
+      "bytes_out": 4469229,
+      "packets_in": 9338,
+      "packets_out": 4229,
+      "connections": 126,
+      "anomaly_score": 0.533
+    },
+    {
+      "timestamp": "2025-08-22T10:29:52.996847",
+      "bytes_in": 5959256,
+      "bytes_out": 2386441,
+      "packets_in": 7129,
+      "packets_out": 2094,
+      "connections": 54,
+      "anomaly_score": 0.065
+    },
+    {
+      "timestamp": "2025-08-22T10:29:58.016853",
+      "bytes_in": 5460631,
+      "bytes_out": 4342583,
+      "packets_in": 2827,
+      "packets_out": 1512,
+      "connections": 285,
+      "anomaly_score": 0.907
+    },
+    {
+      "timestamp": "2025-08-22T10:30:03.035314",
+      "bytes_in": 4636855,
+      "bytes_out": 4243256,
+      "packets_in": 2002,
+      "packets_out": 3096,
+      "connections": 193,
+      "anomaly_score": 0.696
+    },
+    {
+      "timestamp": "2025-08-22T10:30:08.054327",
+      "bytes_in": 2829982,
+      "bytes_out": 2355236,
+      "packets_in": 6326,
+      "packets_out": 1057,
+      "connections": 460,
+      "anomaly_score": 0.182
+    },
+    {
+      "timestamp": "2025-08-22T10:30:13.072860",
+      "bytes_in": 5649851,
+      "bytes_out": 951160,
+      "packets_in": 7133,
+      "packets_out": 3345,
+      "connections": 401,
+      "anomaly_score": 0.592
+    },
+    {
+      "timestamp": "2025-08-22T10:30:18.091001",
+      "bytes_in": 4086372,
+      "bytes_out": 4675404,
+      "packets_in": 8799,
+      "packets_out": 1606,
+      "connections": 277,
+      "anomaly_score": 0.376
+    },
+    {
+      "timestamp": "2025-08-22T10:30:23.115898",
+      "bytes_in": 1748543,
+      "bytes_out": 4719059,
+      "packets_in": 2747,
+      "packets_out": 2935,
+      "connections": 180,
+      "anomaly_score": 0.127
+    },
+    {
+      "timestamp": "2025-08-22T10:30:28.232943",
+      "bytes_in": 3902584,
+      "bytes_out": 4965062,
+      "packets_in": 2789,
+      "packets_out": 773,
+      "connections": 435,
+      "anomaly_score": 0.495
+    },
+    {
+      "timestamp": "2025-08-22T10:30:34.289306",
+      "bytes_in": 5003848,
+      "bytes_out": 509151,
+      "packets_in": 2391,
+      "packets_out": 1658,
+      "connections": 66,
+      "anomaly_score": 0.1
+    },
+    {
+      "timestamp": "2025-08-22T10:30:39.309361",
+      "bytes_in": 2047026,
+      "bytes_out": 4712276,
+      "packets_in": 9925,
+      "packets_out": 4867,
+      "connections": 465,
+      "anomaly_score": 0.819
+    },
+    {
+      "timestamp": "2025-08-22T10:30:44.328779",
+      "bytes_in": 1972241,
+      "bytes_out": 4958536,
+      "packets_in": 4467,
+      "packets_out": 1523,
+      "connections": 274,
+      "anomaly_score": 0.078
+    },
+    {
+      "timestamp": "2025-08-22T10:30:51.342128",
+      "bytes_in": 6175474,
+      "bytes_out": 4957005,
+      "packets_in": 4341,
+      "packets_out": 3538,
+      "connections": 331,
+      "anomaly_score": 0.748
+    },
+    {
+      "timestamp": "2025-08-22T10:30:58.355814",
+      "bytes_in": 2009700,
+      "bytes_out": 1032943,
+      "packets_in": 1100,
+      "packets_out": 4783,
+      "connections": 135,
+      "anomaly_score": 0.315
+    },
+    {
+      "timestamp": "2025-08-22T10:31:05.370013",
+      "bytes_in": 3683115,
+      "bytes_out": 959842,
+      "packets_in": 2528,
+      "packets_out": 1033,
+      "connections": 136,
+      "anomaly_score": 0.646
+    },
+    {
+      "timestamp": "2025-08-22T10:31:12.385747",
+      "bytes_in": 6693362,
+      "bytes_out": 1622606,
+      "packets_in": 8951,
+      "packets_out": 1669,
+      "connections": 124,
+      "anomaly_score": 0.875
+    },
+    {
+      "timestamp": "2025-08-22T10:31:19.397033",
+      "bytes_in": 1945724,
+      "bytes_out": 3808747,
+      "packets_in": 7058,
+      "packets_out": 4822,
+      "connections": 222,
+      "anomaly_score": 0.558
+    },
+    {
+      "timestamp": "2025-08-22T10:31:26.410754",
+      "bytes_in": 3393449,
+      "bytes_out": 3028904,
+      "packets_in": 6975,
+      "packets_out": 2934,
+      "connections": 277,
+      "anomaly_score": 0.108
+    },
+    {
+      "timestamp": "2025-08-22T10:31:33.420709",
+      "bytes_in": 6162298,
+      "bytes_out": 4668008,
+      "packets_in": 6872,
+      "packets_out": 4650,
+      "connections": 127,
+      "anomaly_score": 0.571
+    },
+    {
+      "timestamp": "2025-08-22T10:31:40.432781",
+      "bytes_in": 1098467,
+      "bytes_out": 2435161,
+      "packets_in": 9408,
+      "packets_out": 4045,
+      "connections": 233,
+      "anomaly_score": 0.027
+    },
+    {
+      "timestamp": "2025-08-22T10:31:47.443878",
+      "bytes_in": 9074710,
+      "bytes_out": 2084749,
+      "packets_in": 3100,
+      "packets_out": 2360,
+      "connections": 147,
+      "anomaly_score": 0.734
+    },
+    {
+      "timestamp": "2025-08-22T10:31:54.456787",
+      "bytes_in": 9649045,
+      "bytes_out": 4402671,
+      "packets_in": 6768,
+      "packets_out": 1207,
+      "connections": 353,
+      "anomaly_score": 0.673
+    },
+    {
+      "timestamp": "2025-08-22T10:32:01.469756",
+      "bytes_in": 3348840,
+      "bytes_out": 4353155,
+      "packets_in": 1659,
+      "packets_out": 2985,
+      "connections": 94,
+      "anomaly_score": 0.268
+    }
+  ],
+  "security_events": [
+    {
+      "timestamp": "2025-08-22T10:26:19.408929",
+      "type": "ML_ANALYSIS",
+      "predictions": [
+        {
+          "model": "RandomForest",
+          "threat_probability": 0.044,
+          "prediction": "NORMAL",
+          "confidence": 0.833
+        },
+        {
+          "model": "SVM",
+          "threat_probability": 0.549,
+          "prediction": "NORMAL",
+          "confidence": 0.847
+        },
+        {
+          "model": "NeuralNetwork",
+          "threat_probability": 0.887,
+          "prediction": "THREAT",
+          "confidence": 0.913
+        },
+        {
+          "model": "GradientBoosting",
+          "threat_probability": 0.403,
+          "prediction": "NORMAL",
+          "confidence": 0.921
+        }
+      ],
+      "ensemble_result": {
+        "model": "GradientBoosting",
+        "threat_probability": 0.403,
+        "prediction": "NORMAL",
+        "confidence": 0.921
+      },
+      "features_analyzed": 10
+    },
+    {
+      "timestamp": "2025-08-22T10:26:38.339897",
+      "type": "ML_ANALYSIS",
+      "predictions": [
+        {
+          "model": "RandomForest",
+          "threat_probability": 0.876,
+          "prediction": "THREAT",
+          "confidence": 0.968
+        },
+        {
+          "model": "SVM",
+          "threat_probability": 0.582,
+          "prediction": "NORMAL",
+          "confidence": 0.85
+        },
+        {
+          "model": "NeuralNetwork",
+          "threat_probability": 0.799,
+          "prediction": "THREAT",
+          "confidence": 0.981
+        },
+        {
+          "model": "GradientBoosting",
+          "threat_probability": 0.637,
+          "prediction": "NORMAL",
+          "confidence": 0.896
+        }
+      ],
+      "ensemble_result": {
+        "model": "NeuralNetwork",
+        "threat_probability": 0.799,
+        "prediction": "THREAT",
+        "confidence": 0.981
+      },
+      "features_analyzed": 10
+    },
+    {
+      "timestamp": "2025-08-22T10:26:59.374846",
+      "type": "ML_ANALYSIS",
+      "predictions": [
+        {
+          "model": "RandomForest",
+          "threat_probability": 0.641,
+          "prediction": "NORMAL",
+          "confidence": 0.918
+        },
+        {
+          "model": "SVM",
+          "threat_probability": 0.277,
+          "prediction": "NORMAL",
+          "confidence": 0.84
+        },
+        {
+          "model": "NeuralNetwork",
+          "threat_probability": 0.872,
+          "prediction": "THREAT",
+          "confidence": 0.912
+        },
+        {
+          "model": "GradientBoosting",
+          "threat_probability": 0.963,
+          "prediction": "THREAT",
+          "confidence": 0.927
+        }
+      ],
+      "ensemble_result": {
+        "model": "GradientBoosting",
+        "threat_probability": 0.963,
+        "prediction": "THREAT",
+        "confidence": 0.927
+      },
+      "features_analyzed": 10
+    },
+    {
+      "timestamp": "2025-08-22T10:27:20.408942",
+      "type": "ML_ANALYSIS",
+      "predictions": [
+        {
+          "model": "RandomForest",
+          "threat_probability": 0.636,
+          "prediction": "NORMAL",
+          "confidence": 0.978
+        },
+        {
+          "model": "SVM",
+          "threat_probability": 0.554,
+          "prediction": "NORMAL",
+          "confidence": 0.885
+        },
+        {
+          "model": "NeuralNetwork",
+          "threat_probability": 0.661,
+          "prediction": "NORMAL",
+          "confidence": 0.86
+        },
+        {
+          "model": "GradientBoosting",
+          "threat_probability": 0.8,
+          "prediction": "THREAT",
+          "confidence": 0.973
+        }
+      ],
+      "ensemble_result": {
+        "model": "RandomForest",
+        "threat_probability": 0.636,
+        "prediction": "NORMAL",
+        "confidence": 0.978
+      },
+      "features_analyzed": 10
+    },
+    {
+      "timestamp": "2025-08-22T10:27:41.443946",
+      "type": "ML_ANALYSIS",
+      "predictions": [
+        {
+          "model": "RandomForest",
+          "threat_probability": 0.384,
+          "prediction": "NORMAL",
+          "confidence": 0.911
+        },
+        {
+          "model": "SVM",
+          "threat_probability": 0.11,
+          "prediction": "NORMAL",
+          "confidence": 0.97
+        },
+        {
+          "model": "NeuralNetwork",
+          "threat_probability": 0.899,
+          "prediction": "THREAT",
+          "confidence": 0.872
+        },
+        {
+          "model": "GradientBoosting",
+          "threat_probability": 0.313,
+          "prediction": "NORMAL",
+          "confidence": 0.937
+        }
+      ],
+      "ensemble_result": {
+        "model": "SVM",
+        "threat_probability": 0.11,
+        "prediction": "NORMAL",
+        "confidence": 0.97
+      },
+      "features_analyzed": 10
+    },
+    {
+      "timestamp": "2025-08-22T10:27:57.515920",
+      "type": "ML_ANALYSIS",
+      "predictions": [
+        {
+          "model": "RandomForest",
+          "threat_probability": 0.09,
+          "prediction": "NORMAL",
+          "confidence": 0.97
+        },
+        {
+          "model": "SVM",
+          "threat_probability": 0.232,
+          "prediction": "NORMAL",
+          "confidence": 0.961
+        },
+        {
+          "model": "NeuralNetwork",
+          "threat_probability": 0.916,
+          "prediction": "THREAT",
+          "confidence": 0.935
+        },
+        {
+          "model": "GradientBoosting",
+          "threat_probability": 0.318,
+          "prediction": "NORMAL",
+          "confidence": 0.859
+        }
+      ],
+      "ensemble_result": {
+        "model": "RandomForest",
+        "threat_probability": 0.09,
+        "prediction": "NORMAL",
+        "confidence": 0.97
+      },
+      "features_analyzed": 10
+    },
+    {
+      "timestamp": "2025-08-22T10:28:12.575909",
+      "type": "ML_ANALYSIS",
+      "predictions": [
+        {
+          "model": "RandomForest",
+          "threat_probability": 0.013,
+          "prediction": "NORMAL",
+          "confidence": 0.969
+        },
+        {
+          "model": "SVM",
+          "threat_probability": 0.043,
+          "prediction": "NORMAL",
+          "confidence": 0.825
+        },
+        {
+          "model": "NeuralNetwork",
+          "threat_probability": 0.123,
+          "prediction": "NORMAL",
+          "confidence": 0.911
+        },
+        {
+          "model": "GradientBoosting",
+          "threat_probability": 0.149,
+          "prediction": "NORMAL",
+          "confidence": 0.812
+        }
+      ],
+      "ensemble_result": {
+        "model": "RandomForest",
+        "threat_probability": 0.013,
+        "prediction": "NORMAL",
+        "confidence": 0.969
+      },
+      "features_analyzed": 10
+    },
+    {
+      "timestamp": "2025-08-22T10:28:27.620115",
+      "type": "ML_ANALYSIS",
+      "predictions": [
+        {
+          "model": "RandomForest",
+          "threat_probability": 0.438,
+          "prediction": "NORMAL",
+          "confidence": 0.988
+        },
+        {
+          "model": "SVM",
+          "threat_probability": 0.87,
+          "prediction": "THREAT",
+          "confidence": 0.805
+        },
+        {
+          "model": "NeuralNetwork",
+          "threat_probability": 0.845,
+          "prediction": "THREAT",
+          "confidence": 0.82
+        },
+        {
+          "model": "GradientBoosting",
+          "threat_probability": 0.231,
+          "prediction": "NORMAL",
+          "confidence": 0.841
+        }
+      ],
+      "ensemble_result": {
+        "model": "RandomForest",
+        "threat_probability": 0.438,
+        "prediction": "NORMAL",
+        "confidence": 0.988
+      },
+      "features_analyzed": 10
+    },
+    {
+      "timestamp": "2025-08-22T10:28:42.670396",
+      "type": "ML_ANALYSIS",
+      "predictions": [
+        {
+          "model": "RandomForest",
+          "threat_probability": 0.294,
+          "prediction": "NORMAL",
+          "confidence": 0.822
+        },
+        {
+          "model": "SVM",
+          "threat_probability": 0.284,
+          "prediction": "NORMAL",
+          "confidence": 0.929
+        },
+        {
+          "model": "NeuralNetwork",
+          "threat_probability": 0.712,
+          "prediction": "THREAT",
+          "confidence": 0.916
+        },
+        {
+          "model": "GradientBoosting",
+          "threat_probability": 0.262,
+          "prediction": "NORMAL",
+          "confidence": 0.814
+        }
+      ],
+      "ensemble_result": {
+        "model": "SVM",
+        "threat_probability": 0.284,
+        "prediction": "NORMAL",
+        "confidence": 0.929
+      },
+      "features_analyzed": 10
+    },
+    {
+      "timestamp": "2025-08-22T10:28:57.719704",
+      "type": "ML_ANALYSIS",
+      "predictions": [
+        {
+          "model": "RandomForest",
+          "threat_probability": 0.776,
+          "prediction": "THREAT",
+          "confidence": 0.974
+        },
+        {
+          "model": "SVM",
+          "threat_probability": 0.727,
+          "prediction": "THREAT",
+          "confidence": 0.802
+        },
+        {
+          "model": "NeuralNetwork",
+          "threat_probability": 0.932,
+          "prediction": "THREAT",
+          "confidence": 0.911
+        },
+        {
+          "model": "GradientBoosting",
+          "threat_probability": 0.615,
+          "prediction": "NORMAL",
+          "confidence": 0.902
+        }
+      ],
+      "ensemble_result": {
+        "model": "RandomForest",
+        "threat_probability": 0.776,
+        "prediction": "THREAT",
+        "confidence": 0.974
+      },
+      "features_analyzed": 10
+    },
+    {
+      "timestamp": "2025-08-22T10:29:12.773692",
+      "type": "ML_ANALYSIS",
+      "predictions": [
+        {
+          "model": "RandomForest",
+          "threat_probability": 0.21,
+          "prediction": "NORMAL",
+          "confidence": 0.843
+        },
+        {
+          "model": "SVM",
+          "threat_probability": 0.646,
+          "prediction": "NORMAL",
+          "confidence": 0.855
+        },
+        {
+          "model": "NeuralNetwork",
+          "threat_probability": 0.157,
+          "prediction": "NORMAL",
+          "confidence": 0.953
+        },
+        {
+          "model": "GradientBoosting",
+          "threat_probability": 0.706,
+          "prediction": "THREAT",
+          "confidence": 0.843
+        }
+      ],
+      "ensemble_result": {
+        "model": "NeuralNetwork",
+        "threat_probability": 0.157,
+        "prediction": "NORMAL",
+        "confidence": 0.953
+      },
+      "features_analyzed": 10
+    },
+    {
+      "timestamp": "2025-08-22T10:29:27.896987",
+      "type": "ML_ANALYSIS",
+      "predictions": [
+        {
+          "model": "RandomForest",
+          "threat_probability": 0.47,
+          "prediction": "NORMAL",
+          "confidence": 0.936
+        },
+        {
+          "model": "SVM",
+          "threat_probability": 0.632,
+          "prediction": "NORMAL",
+          "confidence": 0.88
+        },
+        {
+          "model": "NeuralNetwork",
+          "threat_probability": 0.851,
+          "prediction": "THREAT",
+          "confidence": 0.943
+        },
+        {
+          "model": "GradientBoosting",
+          "threat_probability": 0.034,
+          "prediction": "NORMAL",
+          "confidence": 0.951
+        }
+      ],
+      "ensemble_result": {
+        "model": "GradientBoosting",
+        "threat_probability": 0.034,
+        "prediction": "NORMAL",
+        "confidence": 0.951
+      },
+      "features_analyzed": 10
+    },
+    {
+      "timestamp": "2025-08-22T10:29:42.950403",
+      "type": "ML_ANALYSIS",
+      "predictions": [
+        {
+          "model": "RandomForest",
+          "threat_probability": 0.849,
+          "prediction": "THREAT",
+          "confidence": 0.923
+        },
+        {
+          "model": "SVM",
+          "threat_probability": 0.658,
+          "prediction": "NORMAL",
+          "confidence": 0.805
+        },
+        {
+          "model": "NeuralNetwork",
+          "threat_probability": 0.078,
+          "prediction": "NORMAL",
+          "confidence": 0.89
+        },
+        {
+          "model": "GradientBoosting",
+          "threat_probability": 0.763,
+          "prediction": "THREAT",
+          "confidence": 0.977
+        }
+      ],
+      "ensemble_result": {
+        "model": "GradientBoosting",
+        "threat_probability": 0.763,
+        "prediction": "THREAT",
+        "confidence": 0.977
+      },
+      "features_analyzed": 10
+    },
+    {
+      "timestamp": "2025-08-22T10:29:58.017144",
+      "type": "ML_ANALYSIS",
+      "predictions": [
+        {
+          "model": "RandomForest",
+          "threat_probability": 0.648,
+          "prediction": "NORMAL",
+          "confidence": 0.814
+        },
+        {
+          "model": "SVM",
+          "threat_probability": 0.927,
+          "prediction": "THREAT",
+          "confidence": 0.967
+        },
+        {
+          "model": "NeuralNetwork",
+          "threat_probability": 0.874,
+          "prediction": "THREAT",
+          "confidence": 0.8
+        },
+        {
+          "model": "GradientBoosting",
+          "threat_probability": 0.327,
+          "prediction": "NORMAL",
+          "confidence": 0.973
+        }
+      ],
+      "ensemble_result": {
+        "model": "GradientBoosting",
+        "threat_probability": 0.327,
+        "prediction": "NORMAL",
+        "confidence": 0.973
+      },
+      "features_analyzed": 10
+    },
+    {
+      "timestamp": "2025-08-22T10:30:13.073264",
+      "type": "ML_ANALYSIS",
+      "predictions": [
+        {
+          "model": "RandomForest",
+          "threat_probability": 0.576,
+          "prediction": "NORMAL",
+          "confidence": 0.895
+        },
+        {
+          "model": "SVM",
+          "threat_probability": 0.644,
+          "prediction": "NORMAL",
+          "confidence": 0.891
+        },
+        {
+          "model": "NeuralNetwork",
+          "threat_probability": 0.407,
+          "prediction": "NORMAL",
+          "confidence": 0.826
+        },
+        {
+          "model": "GradientBoosting",
+          "threat_probability": 0.19,
+          "prediction": "NORMAL",
+          "confidence": 0.906
+        }
+      ],
+      "ensemble_result": {
+        "model": "GradientBoosting",
+        "threat_probability": 0.19,
+        "prediction": "NORMAL",
+        "confidence": 0.906
+      },
+      "features_analyzed": 10
+    },
+    {
+      "timestamp": "2025-08-22T10:30:28.233315",
+      "type": "ML_ANALYSIS",
+      "predictions": [
+        {
+          "model": "RandomForest",
+          "threat_probability": 0.104,
+          "prediction": "NORMAL",
+          "confidence": 0.986
+        },
+        {
+          "model": "SVM",
+          "threat_probability": 0.449,
+          "prediction": "NORMAL",
+          "confidence": 0.97
+        },
+        {
+          "model": "NeuralNetwork",
+          "threat_probability": 0.365,
+          "prediction": "NORMAL",
+          "confidence": 0.817
+        },
+        {
+          "model": "GradientBoosting",
+          "threat_probability": 0.151,
+          "prediction": "NORMAL",
+          "confidence": 0.859
+        }
+      ],
+      "ensemble_result": {
+        "model": "RandomForest",
+        "threat_probability": 0.104,
+        "prediction": "NORMAL",
+        "confidence": 0.986
+      },
+      "features_analyzed": 10
+    },
+    {
+      "timestamp": "2025-08-22T10:30:44.328949",
+      "type": "ML_ANALYSIS",
+      "predictions": [
+        {
+          "model": "RandomForest",
+          "threat_probability": 0.49,
+          "prediction": "NORMAL",
+          "confidence": 0.851
+        },
+        {
+          "model": "SVM",
+          "threat_probability": 0.422,
+          "prediction": "NORMAL",
+          "confidence": 0.907
+        },
+        {
+          "model": "NeuralNetwork",
+          "threat_probability": 0.316,
+          "prediction": "NORMAL",
+          "confidence": 0.956
+        },
+        {
+          "model": "GradientBoosting",
+          "threat_probability": 0.258,
+          "prediction": "NORMAL",
+          "confidence": 0.849
+        }
+      ],
+      "ensemble_result": {
+        "model": "NeuralNetwork",
+        "threat_probability": 0.316,
+        "prediction": "NORMAL",
+        "confidence": 0.956
+      },
+      "features_analyzed": 10
+    },
+    {
+      "timestamp": "2025-08-22T10:31:05.370265",
+      "type": "ML_ANALYSIS",
+      "predictions": [
+        {
+          "model": "RandomForest",
+          "threat_probability": 0.988,
+          "prediction": "THREAT",
+          "confidence": 0.882
+        },
+        {
+          "model": "SVM",
+          "threat_probability": 0.542,
+          "prediction": "NORMAL",
+          "confidence": 0.958
+        },
+        {
+          "model": "NeuralNetwork",
+          "threat_probability": 0.293,
+          "prediction": "NORMAL",
+          "confidence": 0.859
+        },
+        {
+          "model": "GradientBoosting",
+          "threat_probability": 0.114,
+          "prediction": "NORMAL",
+          "confidence": 0.927
+        }
+      ],
+      "ensemble_result": {
+        "model": "SVM",
+        "threat_probability": 0.542,
+        "prediction": "NORMAL",
+        "confidence": 0.958
+      },
+      "features_analyzed": 10
+    },
+    {
+      "timestamp": "2025-08-22T10:31:26.410920",
+      "type": "ML_ANALYSIS",
+      "predictions": [
+        {
+          "model": "RandomForest",
+          "threat_probability": 0.459,
+          "prediction": "NORMAL",
+          "confidence": 0.852
+        },
+        {
+          "model": "SVM",
+          "threat_probability": 0.817,
+          "prediction": "THREAT",
+          "confidence": 0.882
+        },
+        {
+          "model": "NeuralNetwork",
+          "threat_probability": 0.478,
+          "prediction": "NORMAL",
+          "confidence": 0.955
+        },
+        {
+          "model": "GradientBoosting",
+          "threat_probability": 0.524,
+          "prediction": "NORMAL",
+          "confidence": 0.913
+        }
+      ],
+      "ensemble_result": {
+        "model": "NeuralNetwork",
+        "threat_probability": 0.478,
+        "prediction": "NORMAL",
+        "confidence": 0.955
+      },
+      "features_analyzed": 10
+    },
+    {
+      "timestamp": "2025-08-22T10:31:47.444143",
+      "type": "ML_ANALYSIS",
+      "predictions": [
+        {
+          "model": "RandomForest",
+          "threat_probability": 0.918,
+          "prediction": "THREAT",
+          "confidence": 0.914
+        },
+        {
+          "model": "SVM",
+          "threat_probability": 0.79,
+          "prediction": "THREAT",
+          "confidence": 0.937
+        },
+        {
+          "model": "NeuralNetwork",
+          "threat_probability": 0.227,
+          "prediction": "NORMAL",
+          "confidence": 0.958
+        },
+        {
+          "model": "GradientBoosting",
+          "threat_probability": 0.84,
+          "prediction": "THREAT",
+          "confidence": 0.946
+        }
+      ],
+      "ensemble_result": {
+        "model": "NeuralNetwork",
+        "threat_probability": 0.227,
+        "prediction": "NORMAL",
+        "confidence": 0.958
+      },
+      "features_analyzed": 10
+    }
+  ]
+}

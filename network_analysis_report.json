@@ -1,0 +1,192 @@
+{
+  "report_id": "7517f6c6ccf0",
+  "generated_at": "2025-08-21T21:37:45.925887",
+  "analysis_summary": {
+    "total_packets": 1200,
+    "analysis_period": 300,
+    "timestamp": "2025-08-21T21:37:45.911421",
+    "packet_analysis": {
+      "packet_size_stats": {
+        "mean": 532.6191666666666,
+        "std": 248.75782560415172,
+        "min": "64",
+        "max": "1498",
+        "percentiles": {
+          "25th": 368.0,
+          "50th": 511.0,
+          "75th": 668.0,
+          "95th": 914.0999999999999
+        }
+      },
+      "timing_analysis": {
+        "avg_inter_arrival": 0.10000000007953914,
+        "inter_arrival_std": 1.1681698045223434e-07,
+        "burst_detection": 0.0,
+        "regularity_score": 0.9999998831830331
+      }
+    },
+    "connection_analysis": {
+      "unique_sources": 1200,
+      "connection_distribution": {
+        "mean_connections_per_source": 1.0,
+        "max_connections_per_source": "1",
+        "std_connections": 0.0
+      },
+      "destination_diversity": {
+        "mean_destinations_per_source": 1.0,
+        "max_destinations_per_source": "1"
+      },
+      "top_talkers": [
+        "175.96.194.41",
+        "67.113.141.83",
+        "174.120.77.122",
+        "205.145.66.23",
+        "23.207.165.205",
+        "204.251.58.10",
+        "216.125.147.49",
+        "34.150.202.151",
+        "55.132.202.129",
+        "216.173.43.163"
+      ]
+    },
+    "protocol_analysis": {
+      "protocol_distribution": {
+        "tcp": 0.6808333333333333,
+        "icmp": 0.06166666666666667,
+        "udp": 0.2575
+      },
+      "protocol_entropy": 1.1294881007008666,
+      "top_ports": [
+        [
+          "443",
+          173
+        ],
+        [
+          "1433",
+          159
+        ],
+        [
+          "80",
+          148
+        ],
+        [
+          "22",
+          146
+        ],
+        [
+          "3389",
+          139
+        ],
+        [
+          "3306",
+          139
+        ],
+        [
+          "25",
+          138
+        ],
+        [
+          "53",
+          130
+        ],
+        [
+          "4444",
+          6
+        ],
+        [
+          "8443",
+          5
+        ]
+      ],
+      "port_diversity": 21,
+      "uncommon_ports": [
+        "1433",
+        "3389",
+        "3306",
+        "8443",
+        "9999",
+        "4444",
+        789,
+        "8080"
+      ]
+    },
+    "geographic_analysis": {
+      "country_distribution": {
+        "FR": 0.13416666666666666,
+        "US": 0.15083333333333335,
+        "DE": 0.1475,
+        "RU": 0.13666666666666666,
+        "CN": 0.14333333333333334,
+        "Unknown": 0.12666666666666668,
+        "UK": 0.16083333333333333
+      },
+      "geographic_diversity": 7,
+      "top_countries": [
+        [
+          "UK",
+          193
+        ],
+        [
+          "US",
+          181
+        ],
+        [
+          "DE",
+          177
+        ],
+        [
+          "CN",
+          172
+        ],
+        [
+          "RU",
+          164
+        ]
+      ],
+      "suspicious_countries": [
+        "RU",
+        "CN"
+      ]
+    },
+    "anomaly_detection": {
+      "anomalies": [
+        {
+          "type": "packet_size_anomaly",
+          "count": 34,
+          "severity": "high"
+        }
+      ],
+      "anomaly_count": 1,
+      "anomaly_score": 0.2,
+      "risk_level": "low"
+    },
+    "threat_indicators": [
+      {
+        "type": "malware_c2_communication",
+        "packet_count": 18,
+        "suspicious_ports": [
+          "8080",
+          "8443",
+          "4444",
+          "9999"
+        ],
+        "severity": "high"
+      },
+      {
+        "type": "potential_data_exfiltration",
+        "large_transfer_count": 106,
+        "total_data_size": 129805,
+        "severity": "medium"
+      }
+    ],
+    "security_score": 84.0
+  },
+  "executive_summary": {
+    "total_packets_analyzed": 1200,
+    "security_score": 84.0,
+    "anomalies_detected": 1,
+    "threat_indicators": 2,
+    "risk_assessment": "low"
+  },
+  "recommendations": []
+}
