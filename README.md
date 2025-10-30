@@ -1,12 +1,12 @@
 # 🔥 Firewall - AI-Powered Cybersecurity & Web3 Protection
+![WhatsApp Image 2025-10-31 at 4 57 40 AM](https://github.com/user-attachments/assets/fc4e5992-33a3-4b47-a230-984554c266dc)
+<img width="1920" height="1080" alt="Screenshot_2025-10-31_04-53-01" src="https://github.com/user-attachments/assets/df8ca6ec-ac7a-411e-9f5e-f94df23cf82a" />
+<img width="1920" height="1080" alt="Screenshot_2025-10-31_04-53-16" src="https://github.com/user-attachments/assets/00bc3e54-4712-4e21-bb34-29daf5e99736" />
+<img width="1920" height="1080" alt="Screenshot_2025-10-31_04-55-56" src="https://github.com/user-attachments/assets/8a7a0125-fc7a-4926-8fa5-6044ee6bde87" />
+<img width="1920" height="1080" alt="Screenshot_2025-10-31_05-00-08" src="https://github.com/user-attachments/assets/d794ef2c-3357-4f94-b81c-b44208039823" />
+<img width="1920" height="1080" alt="Screenshot_2025-10-31_05-00-40" src="https://github.com/user-attachments/assets/e7849212-5d2d-4d22-9579-ce9bb9389ac6" />
+<img width="1471" height="902" alt="Screenshot_2025-10-31_05-02-31" src="https://github.com/user-attachments/assets/98bd2c14-6340-4aa8-b14d-d511ea39c198" />
 
-[![Live Demo](https://img.shields.io/badge/demo-live-success)](https://firewal.netlify.app/)
-<img width="1920" height="1080" alt="Screenshot_2025-10-14_02-09-18" src="https://github.com/user-attachments/assets/42e06f03-ab7d-41ec-b91f-d44f5c7dc512" />
-<img width="1920" height="1080" alt="Screenshot_2025-10-14_02-09-10" src="https://github.com/user-attachments/assets/6a077424-9425-4f79-8807-d4e060d5d50b" />
-<img width="1920" height="1080" alt="Screenshot_2025-10-14_02-09-25" src="https://github.com/user-attachments/assets/1fcdcee8-5da4-476b-82d0-4edc3962abfc" />
-<img width="1920" height="1080" alt="Screenshot_2025-10-14_02-09-32" src="https://github.com/user-attachments/assets/28b5021e-e259-4dd4-8810-8e8eae3b704c" />
-<img width="1920" height="1080" alt="Screenshot_2025-10-14_02-09-52" src="https://github.com/user-attachments/assets/070c5d8e-7443-45c0-9bfd-c1e8d037bac3" />
-<img width="1920" height="1080" alt="Screenshot_2025-10-14_02-09-44" src="https://github.com/user-attachments/assets/83dffb42-6530-4765-af91-5408c3174e2a" />
 
 ## 📌 Overview
 
@@ -15,8 +15,6 @@
 As decentralized technologies grow rapidly, security risks such as phishing attacks, scam transactions, and malicious wallet activity are becoming increasingly common. This project addresses these challenges by acting as a monitoring and alerting system for crypto wallets, providing a multi-layer defense system that protects networks, decentralized applications (DApps), and digital assets against cyber attacks and unauthorized access.
 
 Kwala Firewall leverages Kwala APIs and tools to track wallet interactions continuously, analyzing transaction behavior and flagging anything that appears abnormal or potentially harmful. The solution is designed to be lightweight, efficient, and easy to integrate into existing Web3 applications and wallets, making it accessible to both developers and everyday users.
-
-🌐 **Live Demo**: [https://firewal.netlify.app/](https://firewal.netlify.app/)
 
 ## 🎯 Motivation
 
@@ -216,12 +214,6 @@ While the current version of Kwala Firewall demonstrates the concept of real-tim
 - 🤝 **Platform Partnerships** – Partnering with Web3 platforms to provide built-in wallet protection
 - 🎯 **Enhanced User Experience** – Improved interfaces and customization options for everyday users
 
-## 🚀 Deployment
-
-The project is currently deployed at:
-- **Frontend**: [https://firewal.netlify.app/](https://firewal.netlify.app/)
-- **Additional Deployments**: Multiple production environments available
-
 ## 📜 License
 
 This project is licensed under the **MIT License** – feel free to use, modify, and distribute it.
@@ -236,7 +228,7 @@ This project is licensed under the **MIT License** – feel free to use, modify,
 ## 📞 Contact & Support
 
 For questions, suggestions, or collaboration opportunities:
-- **GitHub**: [Project Repository](https://github.com/Neerajupadhayay2004/Kwala-Firewall)
+- **GitHub**: [Project Repository](https://github.com/Neerajupadhayay2004/Firewall)
 - **Issues**: Report bugs or request features through GitHub Issues
 - **Discussions**: Join our community discussions
 
